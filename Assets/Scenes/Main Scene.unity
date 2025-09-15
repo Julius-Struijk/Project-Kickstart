@@ -355,6 +355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094193388}
+  - component: {fileID: 1094193389}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -377,6 +378,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094193389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094193387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf8418a42f40e64b962d670fbd0085a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  playerNames:
+  - Melody
+  - Pompom
+  - Kuromi
+  - Kitty
+  - Chiaki
+  accompliceDistribution:
+    keys: 0000000005000000
+    values: 0100000002000000
 --- !u!1 &1726333103
 GameObject:
   m_ObjectHideFlags: 0
