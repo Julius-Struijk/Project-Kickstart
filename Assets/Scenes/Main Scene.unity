@@ -811,7 +811,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1094193390}
         m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
-        m_MethodName: ProgressGame
+        m_MethodName: SwitchScreens
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1249,7 +1249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1670956011
 Transform:
   m_ObjectHideFlags: 0
@@ -1349,9 +1349,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094193387}
+      - m_Target: {fileID: 1094193390}
         m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SwitchScreens
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

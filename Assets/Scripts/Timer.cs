@@ -14,6 +14,8 @@ public class Timer : MonoBehaviour
         timerText = GetComponent<TextMeshProUGUI>();
         remainingDiscussionTime = totalDiscussionTimeSeconds;
         lastUpdateTime = Time.time;
+
+        if(timerText != null) { timerText.text = UpdateTimerText(); }
     }
 
     // Update is called once per frame
@@ -25,15 +27,22 @@ public class Timer : MonoBehaviour
             { 
                 remainingDiscussionTime--;
                 lastUpdateTime = Time.time;
-                string displayedTimerText = "";
 
-                if(remainingDiscussionTime % 60 < 10) { displayedTimerText = string.Format("{0}:0{1}", remainingDiscussionTime / 60, remainingDiscussionTime % 60); }
-                else { displayedTimerText = string.Format("{0}:{1}", remainingDiscussionTime / 60, remainingDiscussionTime % 60); }
 
-                if (timerText != null) { timerText.text = displayedTimerText; }
-                Debug.LogFormat(displayedTimerText);
+                if (timerText != null) { timerText.text = UpdateTimerText(); }
+                Debug.LogFormat(UpdateTimerText());
             }
-            else { GameStateActions.OnGameProgress?.Invoke(); }
+            else 
+            {
+                remainingDiscussionTime = totalDiscussionTimeSeconds;
+                GameStateActions.OnGameProgress?.Invoke(); 
+            }
         }
+    }
+
+    string UpdateTimerText()
+    {
+        if (remainingDiscussionTime % 60 < 10) { return string.Format("{0}:0{1}", remainingDiscussionTime / 60, remainingDiscussionTime % 60); }
+        else { return string.Format("{0}:{1}", remainingDiscussionTime / 60, remainingDiscussionTime % 60); }
     }
 }
