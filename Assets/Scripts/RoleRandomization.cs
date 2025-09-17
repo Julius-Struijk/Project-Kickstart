@@ -7,7 +7,7 @@ public class RoleRandomization : MonoBehaviour
     [SerializeField] List<string> playerNames;
     [SerializeField] UDictionary<int, int> accompliceDistribution;
     List<string> rolesInPlay;
-    Dictionary<string, string> distributedRoles;
+    UDictionary<string, string> distributedRoles;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +15,7 @@ public class RoleRandomization : MonoBehaviour
         // TODO: Get player names.
         //playerNames = new List<string>();
         rolesInPlay = new List<string>();
-        distributedRoles = new Dictionary<string, string>();
+        distributedRoles = new UDictionary<string, string>();
         Debug.LogFormat("Amount of players {0} Accomplice levels {1}", playerNames.Count, accompliceDistribution.Count);
 
         // Get number of accomplices
@@ -43,6 +43,9 @@ public class RoleRandomization : MonoBehaviour
             Debug.LogFormat("Gave {0} role {1}", name, rolesInPlay[randomIndex]);
             rolesInPlay.RemoveAt(randomIndex);
         }
+
+        // Send out distributed roles so turn order can be randomized.
+        GameStateActions.OnDistributeRoles?.Invoke(distributedRoles);
     }
 
     void AddRoles(int roleAmount, string roleName)

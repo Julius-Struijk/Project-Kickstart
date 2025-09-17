@@ -30,12 +30,12 @@ public class Timer : MonoBehaviour
 
 
                 if (timerText != null) { timerText.text = UpdateTimerText(); }
-                Debug.LogFormat(UpdateTimerText());
+                //Debug.LogFormat(UpdateTimerText());
             }
             else 
             {
                 remainingDiscussionTime = totalDiscussionTimeSeconds;
-                GameStateActions.OnGameProgress?.Invoke(); 
+                GameStateActions.OnGameProgress?.Invoke(1); 
             }
         }
     }
