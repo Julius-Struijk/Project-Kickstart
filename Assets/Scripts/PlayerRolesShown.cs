@@ -20,6 +20,7 @@ public class PlayerRolesShown : MonoBehaviour
 
     void UpdateUnshownPlayers(int players)
     {
+        Debug.Log("Setting unshown players to: " + players);
         unshownPlayers = players;
     }
 

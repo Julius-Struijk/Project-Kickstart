@@ -266,6 +266,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1188843274}
+        m_TargetAssemblyTypeName: SetupPlayers, Assembly-CSharp
+        m_MethodName: SavePlayerInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &34403450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,6 +4073,7 @@ GameObject:
   - component: {fileID: 1094193389}
   - component: {fileID: 1094193390}
   - component: {fileID: 1094193391}
+  - component: {fileID: 1094193392}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4136,6 +4149,18 @@ MonoBehaviour:
   nameText: {fileID: 1072004319}
   roleText: {fileID: 1908040231}
   roleInstructionText: {fileID: 1936911546}
+--- !u!114 &1094193392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094193387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b92e15c65ad0d40a286fc8eed60588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRolesShown
 --- !u!1 &1115386366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,7 +4609,6 @@ GameObject:
   - component: {fileID: 1210870527}
   - component: {fileID: 1210870526}
   - component: {fileID: 1210870525}
-  - component: {fileID: 1210870528}
   m_Layer: 5
   m_Name: Role Button
   m_TagString: Untagged
@@ -4656,7 +4680,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1210870528}
+      - m_Target: {fileID: 1094193392}
         m_TargetAssemblyTypeName: PlayerRolesShown, Assembly-CSharp
         m_MethodName: CheckUnshownPlayers
         m_Mode: 1
@@ -4706,18 +4730,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210870523}
   m_CullTransparentMesh: 1
---- !u!114 &1210870528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210870523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3b92e15c65ad0d40a286fc8eed60588, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerRolesShown
 --- !u!1 &1314581650
 GameObject:
   m_ObjectHideFlags: 0
@@ -4890,7 +4902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
   m_SizeDelta: {x: 500, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322003233
@@ -6081,7 +6093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 468.00006}
+  m_AnchoredPosition: {x: 0, y: 468.00006}
   m_SizeDelta: {x: 2067, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1607543075

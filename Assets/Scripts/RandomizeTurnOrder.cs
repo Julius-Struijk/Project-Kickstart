@@ -47,8 +47,8 @@ public class RandomizePlayerOrder : MonoBehaviour
             if (roleText != null && roleInstructionText != null) { CheckPlayerRole(playerRole); }
             Debug.LogFormat("Next player is {0} with role {1}", playerName, playerRole);
 
-
             distributedRoles.Remove(playerName);
+            //Debug.Log("Roles left to distribute: " + distributedRoles.Count);
             GameStateActions.OnPlayerChanged?.Invoke(distributedRoles.Count);
         }
     }
