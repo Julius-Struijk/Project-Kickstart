@@ -25,14 +25,6 @@ public class RandomizePlayerOrder : MonoBehaviour
     void GetDistributedRoles(UDictionary<string, string> roles)
     {
         distributedRoles = roles;
-        //for(int i = roles.Count; i > 0; i--)
-        //{
-        //    int randomIndex = Random.Range(0, distributedRoles.Count);
-        //    string playerName = distributedRoles.Keys[randomIndex];
-        //    string playerRole = distributedRoles.Values[randomIndex];
-        //    Debug.LogFormat("Next player is {0} with role {1}", playerName, playerRole);
-        //    distributedRoles.Remove(playerName);
-        //}
     }
 
     public void DisplayNextPlayer()
