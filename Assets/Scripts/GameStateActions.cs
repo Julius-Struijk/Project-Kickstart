@@ -10,5 +10,7 @@ public static class GameStateActions
 
     public static Action<int> OnPlayerChanged;
 
-    public static Action<List<string>> OnGivePlayerNames;
+    public static Action<Dictionary<string, GameObject>> OnGivePlayerData;
+
+    public static Action OnRequestPlayerData;
 }

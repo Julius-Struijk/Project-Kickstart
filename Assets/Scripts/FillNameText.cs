@@ -7,13 +7,15 @@ public class FillNameText : MonoBehaviour
 
     private void Awake()
     {
-        GameStateActions.OnGivePlayerNames += GetPlayerNames;
+        GameStateActions.OnGivePlayerData += GetPlayerNames;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Debug.Log("Starting text filler in " + gameObject);
         playerNames = new List<string>();
+        GameStateActions.OnRequestPlayerData?.Invoke();
     }
 
     private void Update()
@@ -21,13 +23,23 @@ public class FillNameText : MonoBehaviour
         
     }
 
-    void GetPlayerNames(List<string> pPlayerNames)
+    void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
     {
-        playerNames = pPlayerNames;
+        foreach(string name in pPlayerData.Keys)
+        {
+            playerNames.Add(name);
+            //Debug.Log("Added name: " + name);
+        }
+    }
+
+    // Adds the player name to the text
+    void AddName()
+    {
+
     }
 
     private void OnDestroy()
     {
-        GameStateActions.OnGivePlayerNames -= GetPlayerNames;
+        GameStateActions.OnGivePlayerData -= GetPlayerNames;
     }
 }

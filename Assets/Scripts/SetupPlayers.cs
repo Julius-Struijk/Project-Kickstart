@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using System;
 
 public class SetupPlayers : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class SetupPlayers : MonoBehaviour
     List<string> playerNames;
     List<GameObject> characters;
     [SerializeField] GameObject rawPlayers;
+
+    private void Awake()
+    {
+        GameStateActions.OnRequestPlayerData += GivePlayerData;
+    }
 
     private void Start()
     {
@@ -51,9 +57,16 @@ public class SetupPlayers : MonoBehaviour
                 }
             }
         }
+    }
 
-
+    public void GivePlayerData()
+    {
         // Send player names to Player Text.
-        //GameStateActions.OnGivePlayerNames?.Invoke(playerNames);
+        GameStateActions.OnGivePlayerData?.Invoke(players);
+    }
+
+    private void OnDestroy()
+    {
+        GameStateActions.OnRequestPlayerData -= GivePlayerData;
     }
 }
