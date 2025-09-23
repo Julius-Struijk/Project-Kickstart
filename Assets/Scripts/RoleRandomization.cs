@@ -21,7 +21,7 @@ public class RoleRandomization : MonoBehaviour
         distributedRoles = new UDictionary<string, string>();
     }
 
-    void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
+    void GetPlayerNames(Dictionary<string, Sprite> pPlayerData)
     {
         if(pPlayerData != null && playerNames.Count <= 0)
         {

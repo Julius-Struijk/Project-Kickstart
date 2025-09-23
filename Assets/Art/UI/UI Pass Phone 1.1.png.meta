@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: affefbc0f85d32d49bb6b6fb718d738a
+guid: 6c00d96ce3589db428890f7198088c88
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4048063138257750676
-    second: welkefile_0
+      213: -7143711567772694883
+    second: UI Pass Phone 1.1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: welkefile_0
+      name: UI Pass Phone 1.1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1080
-        height: 1442
+        height: 453
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c653bc7f50462d7c0800000000000000
-      internalID: -4048063138257750676
+      spriteID: d964f099d207cdc90800000000000000
+      internalID: -7143711567772694883
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      welkefile_0: -4048063138257750676
+      UI Pass Phone 1.1_0: -7143711567772694883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

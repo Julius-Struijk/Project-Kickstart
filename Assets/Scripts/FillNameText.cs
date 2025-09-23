@@ -19,7 +19,7 @@ public class FillNameText : MonoBehaviour
         GameStateActions.OnRequestPlayerData?.Invoke();
     }
 
-    void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
+    void GetPlayerNames(Dictionary<string, Sprite> pPlayerData)
     {
         Debug.Log("Getting player names to fill text.");
         // Prevents adding the names twice if player data is requested by multiple scripts.

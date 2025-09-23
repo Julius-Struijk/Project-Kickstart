@@ -10,7 +10,7 @@ public static class GameStateActions
 
     public static Action<int> OnPlayerChanged;
 
-    public static Action<Dictionary<string, GameObject>> OnGivePlayerData;
+    public static Action<Dictionary<string, Sprite>> OnGivePlayerData;
 
     public static Action OnRequestPlayerData;
 
