@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6040c81af6ce2014ba8d3943ad9edb79
+guid: affefbc0f85d32d49bb6b6fb718d738a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 565521202965635644
-    second: Hedgehog_0
+      213: -4048063138257750676
+    second: welkefile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hedgehog_0
+      name: welkefile_0
       rect:
         serializedVersion: 2
-        x: 146
+        x: 0
         y: 0
-        width: 819
-        height: 1378
+        width: 1080
+        height: 1442
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c32e7bfa98229d700800000000000000
-      internalID: 565521202965635644
+      spriteID: c653bc7f50462d7c0800000000000000
+      internalID: -4048063138257750676
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hedgehog_0: 565521202965635644
+      welkefile_0: -4048063138257750676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
