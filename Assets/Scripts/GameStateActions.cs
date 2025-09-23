@@ -13,4 +13,6 @@ public static class GameStateActions
     public static Action<Dictionary<string, GameObject>> OnGivePlayerData;
 
     public static Action OnRequestPlayerData;
+
+    public static Action<String> OnPlayerTurn;
 }
