@@ -15,6 +15,12 @@ public class EnablePlayerCharacter : MonoBehaviour
     void Start()
     {
         playerCharacters = new List<GameObject>();
+        // Prevents requesting data multiple times if it has already been done by another script.
+        if (playerCharacters.Count <= 0)
+        {
+            Debug.Log("Requesting player names in character enabler " + gameObject);
+            GameStateActions.OnRequestPlayerData?.Invoke();
+        }
     }
 
     void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
@@ -48,12 +54,12 @@ public class EnablePlayerCharacter : MonoBehaviour
 
     private void OnEnable()
     {
-        // Prevents requesting data multiple times if it has already been done by another script.
-        if (playerCharacters.Count <= 0)
-        {
-            Debug.Log("Requesting player names in character enabler " + gameObject);
-            GameStateActions.OnRequestPlayerData?.Invoke();
-        }
+        //// Prevents requesting data multiple times if it has already been done by another script.
+        //if (playerCharacters.Count <= 0)
+        //{
+        //    Debug.Log("Requesting player names in character enabler " + gameObject);
+        //    GameStateActions.OnRequestPlayerData?.Invoke();
+        //}
     }
 
     private void OnDestroy()
