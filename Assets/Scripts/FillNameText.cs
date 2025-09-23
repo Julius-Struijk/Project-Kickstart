@@ -19,27 +19,31 @@ public class FillNameText : MonoBehaviour
 
     void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
     {
-        foreach(string name in pPlayerData.Keys)
+        // Prevents adding the names twice if player data is requested by multiple scripts.
+        if (playerNames.Count <= 0)
         {
-            playerNames.Add(name);
-            //Debug.Log("Added name: " + name);
+            foreach (string name in pPlayerData.Keys)
+            {
+                playerNames.Add(name);
+                //Debug.Log("Added name: " + name);
+            }
+            FillText();
         }
-        FillText();
     }
 
     // Adds the player name to the text
     void FillText()
     {
-        for(int i = 0; i < gameObject.transform.childCount; i++)
+        for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             TextMeshProUGUI playerName = gameObject.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
-            if(playerName != null) { playerName.text = playerNames[i]; }
+            if (playerName != null) { playerName.text = playerNames[i]; }
         }
     }
 
     private void OnEnable()
     {
-        //Debug.Log("Requesting player names in text filler " + gameObject);
+        Debug.Log("Requesting player names in text filler " + gameObject);
         GameStateActions.OnRequestPlayerData?.Invoke();
     }
 
