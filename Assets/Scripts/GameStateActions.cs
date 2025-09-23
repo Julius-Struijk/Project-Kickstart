@@ -9,4 +9,8 @@ public static class GameStateActions
     public static Action<UDictionary<string, string>> OnDistributeRoles;
 
     public static Action<int> OnPlayerChanged;
+
+    public static Action<Dictionary<string, GameObject>> OnGivePlayerData;
+
+    public static Action OnRequestPlayerData;
 }

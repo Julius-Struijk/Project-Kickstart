@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 public class GameProgression : MonoBehaviour
 {
-    // TODO: Get number of players.
     [SerializeField] List<GameObject> screenDisplayOrder;
     int currentScreenIndex = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,7 +18,6 @@ public class GameProgression : MonoBehaviour
         if(screenDisplayOrder.Count != 0) { screenDisplayOrder[currentScreenIndex].SetActive(true); }
     }
 
-    // TODO: If value is passed, switch to the screen that corresponds to the index.
     public void SwitchScreens(int switchAmount = 1)
     {
         screenDisplayOrder[currentScreenIndex].SetActive(false);

@@ -4,19 +4,36 @@ using System.Collections.Generic;
 
 public class RoleRandomization : MonoBehaviour
 {
-    [SerializeField] List<string> playerNames;
+    List<string> playerNames;
     [SerializeField] UDictionary<int, int> accompliceDistribution;
     List<string> rolesInPlay;
     UDictionary<string, string> distributedRoles;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-        // TODO: Get player names.
-        //playerNames = new List<string>();
+        GameStateActions.OnGivePlayerData += GetPlayerNames;
+    }
+
+    private void Start()
+    {
+        playerNames = new List<string>();
         rolesInPlay = new List<string>();
         distributedRoles = new UDictionary<string, string>();
+    }
+
+    void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
+    {
+        foreach (string name in pPlayerData.Keys)
+        {
+            playerNames.Add(name);
+        }
         Debug.LogFormat("Amount of players {0} Accomplice levels {1}", playerNames.Count, accompliceDistribution.Count);
+        RandomizeRoles();
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void RandomizeRoles()
+    {
 
         // Get number of accomplices
         int accompliceAmount = 0;
@@ -53,4 +70,8 @@ public class RoleRandomization : MonoBehaviour
         for (int i = 0; i < roleAmount; i++) { rolesInPlay.Add(roleName); }
     }
 
+    private void OnDestroy()
+    {
+        GameStateActions.OnGivePlayerData -= GetPlayerNames;
+    }
 }
