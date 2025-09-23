@@ -42,7 +42,7 @@ public class RandomizePlayerOrder : MonoBehaviour
             distributedRoles.Remove(playerName);
             //Debug.Log("Roles left to distribute: " + distributedRoles.Count);
             GameStateActions.OnPlayerChanged?.Invoke(distributedRoles.Count);
-            //GameStateActions
+            GameStateActions.OnPlayerTurn?.Invoke(playerName);
         }
     }
 
