@@ -23,12 +23,15 @@ public class RoleRandomization : MonoBehaviour
 
     void GetPlayerNames(Dictionary<string, GameObject> pPlayerData)
     {
-        foreach (string name in pPlayerData.Keys)
+        if(pPlayerData != null && playerNames.Count <= 0)
         {
-            playerNames.Add(name);
+            foreach (string name in pPlayerData.Keys)
+            {
+                playerNames.Add(name);
+            }
+            Debug.LogFormat("Amount of players {0} Accomplice levels {1}", playerNames.Count, accompliceDistribution.Count);
+            RandomizeRoles();
         }
-        Debug.LogFormat("Amount of players {0} Accomplice levels {1}", playerNames.Count, accompliceDistribution.Count);
-        RandomizeRoles();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

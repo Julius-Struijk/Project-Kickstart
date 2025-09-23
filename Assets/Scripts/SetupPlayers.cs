@@ -62,7 +62,8 @@ public class SetupPlayers : MonoBehaviour
     public void GivePlayerData()
     {
         // Send player names to Player Text.
-        GameStateActions.OnGivePlayerData?.Invoke(players);
+        if (players != null) { GameStateActions.OnGivePlayerData?.Invoke(players); }
+       
     }
 
     private void OnDestroy()
