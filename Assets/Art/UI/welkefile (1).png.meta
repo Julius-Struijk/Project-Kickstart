@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: affefbc0f85d32d49bb6b6fb718d738a
+guid: 69af2d8df35c261438e75b109667ff8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4048063138257750676
-    second: welkefile_0
+      213: 5998094175553114579
+    second: welkefile (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: welkefile_0
+      name: welkefile (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c653bc7f50462d7c0800000000000000
-      internalID: -4048063138257750676
+      spriteID: 3d1de279fd28d3350800000000000000
+      internalID: 5998094175553114579
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      welkefile_0: -4048063138257750676
+      welkefile (1)_0: 5998094175553114579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
