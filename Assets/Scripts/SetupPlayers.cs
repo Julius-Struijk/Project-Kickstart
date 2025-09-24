@@ -5,9 +5,9 @@ using System;
 
 public class SetupPlayers : MonoBehaviour
 {
-    Dictionary<string, GameObject> players;
+    Dictionary<string, Sprite> players;
     List<string> playerNames;
-    List<GameObject> characters;
+    List<Sprite> characters;
     [SerializeField] GameObject rawPlayers;
 
     private void Awake()
@@ -17,9 +17,9 @@ public class SetupPlayers : MonoBehaviour
 
     private void Start()
     {
-        players = new Dictionary<string, GameObject>();
+        players = new Dictionary<string, Sprite>();
         playerNames = new List<string>();
-        characters = new List<GameObject>();
+        characters = new List<Sprite>();
     }
 
     //Save player info once setup is complete.
@@ -40,7 +40,8 @@ public class SetupPlayers : MonoBehaviour
                     }
                     else if (child.GetChild(j).gameObject.CompareTag("PlayerImage"))
                     {
-                        characters.Add(child.GetChild(j).gameObject);
+                        SpriteRenderer spriteRenderer = child.GetChild(j).gameObject.GetComponent<SpriteRenderer>();
+                        characters.Add(spriteRenderer.sprite);
                     }
                 }
 
