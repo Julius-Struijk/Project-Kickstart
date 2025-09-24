@@ -7,10 +7,16 @@ public class RulesPage : MonoBehaviour
     private int currentIndex = 0;
     private List<int> previousIndex = new List<int>();
 
+    private void Start()
+    {
+        pages[0].SetActive(true);
+    }
+
     public void ShowPage(int pageNumbers)
     {
         pages[currentIndex].SetActive(false);
         pages[pageNumbers].SetActive(true);
+        if(pageNumbers == 0 ) { previousIndex.Clear(); }
         previousIndex.Add(currentIndex);
         currentIndex = pageNumbers;
     }
