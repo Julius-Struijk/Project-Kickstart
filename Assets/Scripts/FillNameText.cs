@@ -40,7 +40,11 @@ public class FillNameText : MonoBehaviour
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             TextMeshProUGUI playerName = gameObject.transform.GetChild(i).GetComponent<TextMeshProUGUI>();
-            if (playerName != null && i < playerNames.Count) { playerName.text = playerNames[i]; }
+            if(playerName != null)
+            {
+                if (i < playerNames.Count) { playerName.text = playerNames[i]; }
+                else { playerName.text = ""; }
+            }
         }
     }
 
