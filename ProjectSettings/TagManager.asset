@@ -6,7 +6,6 @@ TagManager:
   tags:
   - TextInput
   - PlayerImage
-  - Screen
   layers:
   - Default
   - TransparentFX
