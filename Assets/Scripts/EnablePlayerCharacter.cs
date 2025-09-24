@@ -14,18 +14,18 @@ public class EnablePlayerCharacter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        players = new Dictionary<string, Sprite>();
-        // Prevents requesting data multiple times if it has already been done by another script.
-        if (players.Count <= 0)
-        {
-            Debug.LogFormat("Requesting player names in character enabler {0} with player count {1}", gameObject, players.Count);
-            GameStateActions.OnRequestPlayerData?.Invoke();
-        }
+        //players = new Dictionary<string, Sprite>();
+        //// Prevents requesting data multiple times if it has already been done by another script.
+        //if (players.Count <= 0)
+        //{
+        //    Debug.LogFormat("Requesting player names in character enabler {0} with player count {1}", gameObject, players.Count);
+        //    GameStateActions.OnRequestPlayerData?.Invoke();
+        //}
     }
 
     void GetPlayerNames(Dictionary<string, Sprite> pPlayerData)
     {
-        if(players.Count <= 0)
+        if (players.Count <= 0)
         {
             foreach (KeyValuePair<string, Sprite> player in pPlayerData)
             {
@@ -47,23 +47,31 @@ public class EnablePlayerCharacter : MonoBehaviour
 
     void DisplaySpecificCharacter(string playerName)
     {
-        if(players != null)
+        Debug.LogFormat("Checking if {0}'s character can be displayed in {1}", playerName, gameObject.transform.parent.gameObject);
+
+        if (players == null)
         {
-            Debug.LogFormat("Checking if {0}'s character can be displayed.", playerName);
+            players = new Dictionary<string, Sprite>();
+            Debug.LogFormat("Requesting player names in character enabler in {0} with player count {1}", gameObject.transform.parent.gameObject, players.Count);
+            GameStateActions.OnRequestPlayerData?.Invoke();
+        }
+
+        if (players != null)
+        {
             players.TryGetValue(playerName, out Sprite character);
-            if(character != null)
+            if (character != null)
             {
                 for (int i = 0; i < gameObject.transform.childCount; i++)
                 {
                     SpriteRenderer child = gameObject.transform.GetChild(i).gameObject.GetComponent<SpriteRenderer>();
 
-                    Debug.LogFormat("Checking if player character {0} is the same as character {1}.", character, child.sprite);
+                    //Debug.LogFormat("Checking if player character {0} is the same as character {1}.", character, child.sprite);
                     if (child.sprite == character)
                     {
                         Debug.Log("Showing specific player character " + character.name);
                         child.gameObject.SetActive(true);
-                        break;
                     }
+                    else { child.gameObject.SetActive(false); }
                 }
             }
         }
@@ -71,11 +79,9 @@ public class EnablePlayerCharacter : MonoBehaviour
 
     private void OnEnable()
     {
-        //// Prevents requesting data multiple times if it has already been done by another script.
-        //if (playerCharacters.Count <= 0)
+        //if(players != null)
         //{
-        //    Debug.Log("Requesting player names in character enabler " + gameObject);
-        //    GameStateActions.OnRequestPlayerData?.Invoke();
+        //    if(characterDisplayAmount == 1) {  }
         //}
     }
 
