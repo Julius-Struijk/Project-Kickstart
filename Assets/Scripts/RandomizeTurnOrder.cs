@@ -29,7 +29,7 @@ public class RandomizePlayerOrder : MonoBehaviour
 
     public void DisplayNextPlayer()
     {
-        if(distributedRoles.Count > 0)
+        if(distributedRoles != null && distributedRoles.Count > 0)
         {
             // Display text related to next player.
             int randomIndex = Random.Range(0, distributedRoles.Count);
