@@ -17,4 +17,8 @@ public static class GameStateActions
     public static Action<String> OnPlayerTurn;
 
     public static Action<Dictionary<string, string>> OnCrimesSaved;
+
+    public static Action OnGameReverse;
+
+    public static Action OnScreenSkip;
 }

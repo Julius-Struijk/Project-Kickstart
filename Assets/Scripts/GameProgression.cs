@@ -29,6 +29,11 @@ public class GameProgression : MonoBehaviour
         Debug.Log("Moving to: " + screenDisplayOrder[currentScreenIndex].name);
     }
 
+    public void SetScreenIndex(int newIndex)
+    {
+        currentScreenIndex = newIndex;
+    }
+
     private void OnDisable()
     {
         GameStateActions.OnGameProgress -= SwitchScreens;

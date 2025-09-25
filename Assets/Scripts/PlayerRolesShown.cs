@@ -14,8 +14,16 @@ public class PlayerRolesShown : MonoBehaviour
     {
         Debug.Log("Unshown players: " + unshownPlayers);
         // If all players haven't been shown yet, we return to the player role screen. Otherwise we continue.
-        if(unshownPlayers != 0) { GameStateActions.OnGameProgress?.Invoke(-1); }
-        else { GameStateActions.OnGameProgress?.Invoke(1); }
+        if(unshownPlayers != 0) 
+        { 
+            GameStateActions.OnGameProgress?.Invoke(-1);
+            GameStateActions.OnGameReverse?.Invoke();
+        }
+        else 
+        { 
+            GameStateActions.OnGameProgress?.Invoke(1);
+            GameStateActions.OnScreenSkip?.Invoke();
+        }
     }
 
     void UpdateUnshownPlayers(int players)
