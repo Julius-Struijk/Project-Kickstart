@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &426758073
+--- !u!1 &12284106
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2789,7 +2789,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208552561}
-  - component: {fileID: 208552562}
   m_Layer: 0
   m_Name: Accomplice Voting Screen
   m_TagString: Untagged
@@ -2821,20 +2820,6 @@ Transform:
   - {fileID: 1224621689}
   m_Father: {fileID: 1726333107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &208552562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208552560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: voting for accompice
-  musicClip: {fileID: 8300000, guid: 3d0a51a3debaf3247a1c9b0ff4ae9954, type: 3}
 --- !u!1 &213657883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,21 +5677,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &426758074
+--- !u!81 &457086663
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426758073}
+  m_GameObject: {fileID: 457086662}
   m_Enabled: 1
---- !u!20 &426758075
+--- !u!20 &457086664
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426758073}
+  m_GameObject: {fileID: 457086662}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -5735,7 +5720,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5751,13 +5736,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &426758076
+--- !u!4 &457086665
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426758073}
+  m_GameObject: {fileID: 457086662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
@@ -6475,7 +6460,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 525308299}
-  - component: {fileID: 525308300}
   m_Layer: 0
   m_Name: Crime Guessing Screen
   m_TagString: Untagged
@@ -6507,20 +6491,6 @@ Transform:
   - {fileID: 12284107}
   m_Father: {fileID: 1726333107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &525308300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525308298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: discussion
-  musicClip: {fileID: 8300000, guid: 1a6ff17a18064f64a8d337644e08e78c, type: 3}
 --- !u!1 &528044699
 GameObject:
   m_ObjectHideFlags: 0
@@ -6880,7 +6850,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572490983}
-  - component: {fileID: 572490984}
   m_Layer: 5
   m_Name: PackScreen
   m_TagString: Untagged
@@ -6912,20 +6881,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &572490984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572490982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &580391760
 GameObject:
   m_ObjectHideFlags: 0
@@ -9290,7 +9245,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 746666010}
-  - component: {fileID: 746666011}
   m_Layer: 5
   m_Name: Player Role Screen
   m_TagString: Untagged
@@ -9325,20 +9279,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &746666011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746666009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &758110341
 GameObject:
   m_ObjectHideFlags: 0
@@ -10405,7 +10345,6 @@ GameObject:
   m_Component:
   - component: {fileID: 875385432}
   - component: {fileID: 875385433}
-  - component: {fileID: 875385434}
   m_Layer: 5
   m_Name: CharacterCustomizationScreen
   m_TagString: Untagged
@@ -10450,7 +10389,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -10535,20 +10474,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &875385434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875385431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &881021058
 GameObject:
   m_ObjectHideFlags: 0
@@ -14656,7 +14581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1096699603
 Transform:
   m_ObjectHideFlags: 0
@@ -14826,7 +14751,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115386367}
-  - component: {fileID: 1115386368}
   m_Layer: 5
   m_Name: Mystery Screen
   m_TagString: Untagged
@@ -14859,20 +14783,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1115386368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115386366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &1123274227
 GameObject:
   m_ObjectHideFlags: 0
@@ -16105,7 +16015,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1200996797}
-  - component: {fileID: 1200996798}
   m_Layer: 5
   m_Name: Rules Screen
   m_TagString: Untagged
@@ -16138,20 +16047,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1200996798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200996796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &1204453196
 GameObject:
   m_ObjectHideFlags: 0
@@ -16251,7 +16146,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1205521798}
-  - component: {fileID: 1205521799}
   m_Layer: 5
   m_Name: Voting Screen
   m_TagString: Untagged
@@ -16282,20 +16176,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1205521799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205521797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: voting for crime
-  musicClip: {fileID: 8300000, guid: 6fa82b33b157bcd428bfeec18af0fe50, type: 3}
 --- !u!1 &1206696514
 GameObject:
   m_ObjectHideFlags: 0
@@ -18964,7 +18844,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348350222}
-  - component: {fileID: 1348350223}
   m_Layer: 0
   m_Name: Round Results Screen
   m_TagString: Untagged
@@ -18996,20 +18875,6 @@ Transform:
   - {fileID: 2065937679}
   m_Father: {fileID: 1726333107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1348350223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348350221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: victory
-  musicClip: {fileID: 8300000, guid: a33de62d85376714985562577e8c3928, type: 3}
 --- !u!1 &1353665258
 GameObject:
   m_ObjectHideFlags: 0
@@ -23157,7 +23022,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607543076}
-  - component: {fileID: 1607543077}
   m_Layer: 5
   m_Name: Player Turn Screen
   m_TagString: Untagged
@@ -23191,20 +23055,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1607543077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607543075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &1629015491
 GameObject:
   m_ObjectHideFlags: 0
@@ -24306,75 +24156,22 @@ Transform:
   - {fileID: 1906046277}
   m_Father: {fileID: 1726333107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1670956012
-MonoBehaviour:
+--- !u!82 &1670956012
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670956010}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: discussion
-  musicClip: {fileID: 8300000, guid: 1a6ff17a18064f64a8d337644e08e78c, type: 3}
---- !u!1 &1680623592
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1680623593}
-  - component: {fileID: 1680623594}
-  - component: {fileID: 1680623595}
-  m_Layer: 5
-  m_Name: Main Menu Screen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1680623593
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680623592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1436767652}
-  - {fileID: 1391797240}
-  m_Father: {fileID: 1726333107}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &1680623594
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1680623592}
-  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
-  m_PlayOnAwake: 0
+  m_Resource: {fileID: 8300000, guid: 1a6ff17a18064f64a8d337644e08e78c, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -24456,20 +24253,141 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1680623595
-MonoBehaviour:
+--- !u!1 &1680623592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680623593}
+  - component: {fileID: 1680623594}
+  m_Layer: 5
+  m_Name: Main Menu Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1680623593
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680623592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1436767652}
+  - {fileID: 1391797240}
+  m_Father: {fileID: 1726333107}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1680623594
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680623592}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1683851996
 GameObject:
   m_ObjectHideFlags: 0
@@ -25791,147 +25709,18 @@ Transform:
   - {fileID: 922586960}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1746959541
-AudioSource:
+--- !u!114 &1746959541
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746959538}
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!1 &1754852685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1754852687}
-  - component: {fileID: 1754852686}
-  m_Layer: 0
-  m_Name: MusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1754852686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754852685}
-  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 754cbdde9b0cc934c99b2f38cc1eed68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicManager
---- !u!4 &1754852687
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754852685}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.70779, y: -0.16332, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755866438
 GameObject:
   m_ObjectHideFlags: 0
@@ -27130,7 +26919,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1871928488}
-  - component: {fileID: 1871928489}
   m_Layer: 0
   m_Name: Crime Guessed Screen
   m_TagString: Untagged
@@ -27162,20 +26950,6 @@ Transform:
   - {fileID: 1715284038}
   m_Father: {fileID: 1726333107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1871928489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871928487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: voting for crime
-  musicClip: {fileID: 8300000, guid: 6fa82b33b157bcd428bfeec18af0fe50, type: 3}
 --- !u!1 &1875330825
 GameObject:
   m_ObjectHideFlags: 0
@@ -27220,7 +26994,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1882760278}
-  - component: {fileID: 1882760279}
   m_Layer: 5
   m_Name: PauseScreen
   m_TagString: Untagged
@@ -27249,20 +27022,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1882760279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882760277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &1888548276
 GameObject:
   m_ObjectHideFlags: 0
@@ -30221,7 +29980,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2069555836}
-  - component: {fileID: 2069555837}
   m_Layer: 5
   m_Name: Player Crime Screen
   m_TagString: Untagged
@@ -30255,20 +30013,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2069555837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069555835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f59ee9dbdc3277a438f95cea263c4e54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIPanel
-  associatedMusicTrack: starting music
-  musicClip: {fileID: 8300000, guid: 8fbfa0aaed6db0b4f82729b9a7fd83bc, type: 3}
 --- !u!1 &2073038882
 GameObject:
   m_ObjectHideFlags: 0
@@ -31582,4 +31326,3 @@ SceneRoots:
   - {fileID: 2065044198}
   - {fileID: 1094193388}
   - {fileID: 1746959540}
-  - {fileID: 1754852687}
