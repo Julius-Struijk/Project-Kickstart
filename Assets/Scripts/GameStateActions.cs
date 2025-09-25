@@ -15,4 +15,6 @@ public static class GameStateActions
     public static Action OnRequestPlayerData;
 
     public static Action<String> OnPlayerTurn;
+
+    public static Action<Dictionary<string, string>> OnCrimesSaved;
 }

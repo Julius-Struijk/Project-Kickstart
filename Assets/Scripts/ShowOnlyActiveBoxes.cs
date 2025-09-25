@@ -10,28 +10,6 @@ public class ShowOnlyActiveBoxes : MonoBehaviour
         GameStateActions.OnGivePlayerData += GetPlayerNames;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //// Find the game object that has the player names.
-        //for (int i = 0; i < gameObject.transform.childCount; i++)
-        //{
-        //    GameObject containerChild = gameObject.transform.GetChild(i).gameObject;
-        //    if (containerChild.GetComponent<FillNameText>())
-        //    {
-        //        for (int j = 0; j < containerChild.transform.childCount; j++)
-        //        {
-        //            transform child = containerChild.transform.GetChild(i);
-        //            if (child.GetChild(j).gameObject.CompareTag("TextInput"))
-        //            {
-        //                TMP_InputField textInput = child.GetChild(j).gameObject.GetComponent<TMP_InputField>();
-        //                if (textInput != null) { playerNames.Add(textInput.text); }
-        //            }
-        //        }
-        //    }
-        //}
-    }
-
     void GetPlayerNames(Dictionary<string, Sprite> pPlayerData)
     {
         Debug.Log("Getting player names to fill text.");

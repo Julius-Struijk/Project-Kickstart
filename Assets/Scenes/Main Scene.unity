@@ -2991,7 +2991,7 @@ GameObject:
   - component: {fileID: 139084330}
   m_Layer: 5
   m_Name: Name 5
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3375,7 +3375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4211,7 +4211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &208552561
 Transform:
   m_ObjectHideFlags: 0
@@ -9619,7 +9619,7 @@ GameObject:
   - component: {fileID: 611419799}
   m_Layer: 0
   m_Name: InputBoxes
-  m_TagString: TextInput
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9838,7 +9838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11392,7 +11392,7 @@ GameObject:
   - component: {fileID: 714695881}
   m_Layer: 5
   m_Name: Name 4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13125,10 +13125,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785255610}
-  - component: {fileID: 785255612}
   - component: {fileID: 785255611}
+  - component: {fileID: 785255612}
   m_Layer: 0
-  m_Name: Players
+  m_Name: Players Crime Guessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13174,7 +13174,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0823eacb595d26441b74dcc9ab2c1219, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::CollectCrimes
 --- !u!1 &791108088
 GameObject:
   m_ObjectHideFlags: 0
@@ -14685,7 +14685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14777,7 +14777,7 @@ GameObject:
   - component: {fileID: 938999248}
   m_Layer: 5
   m_Name: Name 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14957,7 +14957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17091,7 +17091,7 @@ GameObject:
   - component: {fileID: 1061322996}
   m_Layer: 5
   m_Name: Name 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29810,7 +29810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30036,7 +30036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X Votes
+  m_text: X Points
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32136,7 +32136,7 @@ GameObject:
   - component: {fileID: 1815080447}
   m_Layer: 5
   m_Name: Name 6
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35804,7 +35804,7 @@ GameObject:
   - component: {fileID: 2009668060}
   m_Layer: 5
   m_Name: Name 3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38344,9 +38344,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1094193390}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 785255612}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SaveCrimeGuesses
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CollectCrimes, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5044888116868261846, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8932357709824117688, guid: 436bb0f3acdf8b64c8d7f5110921f26f, type: 3}
       propertyPath: m_Name
       value: ContinueButton
