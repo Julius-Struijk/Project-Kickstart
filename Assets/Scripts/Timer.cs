@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField] int totalDiscussionTimeSeconds = 300;
     int remainingDiscussionTime;
     float lastUpdateTime;
+    public GameObject GameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,7 +36,8 @@ public class Timer : MonoBehaviour
             else 
             {
                 remainingDiscussionTime = totalDiscussionTimeSeconds;
-                GameStateActions.OnGameProgress?.Invoke(1); 
+                GameStateActions.OnGameProgress?.Invoke(1);
+                GameManager.GetComponent<RulesPage>().ShowPage(11);
             }
         }
     }
