@@ -11,18 +11,6 @@ public class EnablePlayerCharacter : MonoBehaviour
         GameStateActions.OnGivePlayerData += GetPlayerNames;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //players = new Dictionary<string, Sprite>();
-        //// Prevents requesting data multiple times if it has already been done by another script.
-        //if (players.Count <= 0)
-        //{
-        //    Debug.LogFormat("Requesting player names in character enabler {0} with player count {1}", gameObject, players.Count);
-        //    GameStateActions.OnRequestPlayerData?.Invoke();
-        //}
-    }
-
     void GetPlayerNames(Dictionary<string, Sprite> pPlayerData)
     {
         if (players.Count <= 0)
